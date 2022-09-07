@@ -1,10 +1,26 @@
-!
-스킨구획화연습
-<header>헤더내용<header>
-<div>띠배너내용</div>
-<main>
-  <section>콘텐츠</section>
-  <section>콘텐츠</section>
-  <section>콘텐츠</section>
-  <section>콘텐츠</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스킨 구획화 연습</title>
+</head>
+<body>
+  <!-- 띠배너시작 -->
+  <div>띠배너내용</div>
+  <!-- //띠배너 -->
+
+  <header>해더내용</header>
+
+  <div>
+    <main>
+      <section>콘텐츠1</section>
+      <section>콘텐츠2</section>
+      <section>콘텐츠3</section>
+      <section>콘텐츠4</section>
+    </main>
+  </div>
   
+</body>
+</html>
