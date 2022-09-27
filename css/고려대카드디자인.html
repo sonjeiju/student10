@@ -1,89 +1,229 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>고려대카드디자인</title>
   <style>
-    *{margin: 0; padding: 0;}
-    ul,ol,li{list-style: none;}
-    body{
+    * {margin: 0; padding: 0;}
+      ul,ol,li {list-style: none;}
+
+      body {
       font-family: "맑은 고딕";
       font-size: 0.875em;
-      color:#333
+      color: #333
     }
+
     a:link,
-    a:visited,
-    a:hover{
-  text-decoration: underline;
-}
-.card.thumb a{
-  display:block;
+    a:visited{color: #333;
+      text-decoration: none;}
+    a:hover {color: #333;
+      text-decoration: underline;}
 
+    .card{margin: 50px}
+    .card li{
+      display: inline-block;
+      width: 25%;
+      border-top: 2px solid #f00;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+    .card li:hover{box-shadow: 0px 0px 5px rgba(91, 45, 246, 0.8);
+    
+}
 
-}
-.card.thumb a img{  width:100%;}
-.card{margin: 50px}
-.card li{
-  display: inline-block;
-  width:25%;
-  max-width: 600px;
-  border-top:2px solid #f00;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);}
-  .card li:hover{box-shadow: 0px 0px 5px rgba(43, 62, 227, 0.3);}
-.card.thumb a{
-  display:block;}
-.card.thumb a img{  width:100%;}
-.card .content { padding: 2rem 2.5rem;
-/* 14px * 2    */
-}
-.card .content a:nth-of-type(1){
-  display: block;
-  font-size: 2rem;
-font-weight: 700;
-margin-bottom: 1rem;}
+    .card.thumb a {display: block;}
+    .card.thumb a img {width: 100%;}
 
-.card .content div{
-  font-size: 1rem;
-margin-bottom: 2rem ;
-}
-.card .content a:nth-of-type(2){
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-</style>
+   .card .content {
+      padding: 2rem 2.5rem;
+      /* 14px * 2    */
+    }
+
+    .card .content a:nth-of-type(1) {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .card .content div {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .card .content a:nth-of-type(2) {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
   <div class="wrap">
     <ul class="card">
       <li>
-        <div class="thumb"><a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&siteId=university&page=1&id=university_060103000000&boardSeq=493471&command=albumView"><img src="background background/images bg.jpg" alt="이미지 대한 설명"></a>
-        
-        
-        <div class="content">
-          <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&siteId=university&page=1&id=university_060103000000&boardSeq=493471&command=albumView"></a>
-          <div>카드뉴스의 제목1</div>
-          <a href=""></a>
-        </div>
-       </li>
-       <li>
-   <div class="thumb"><a href="https://www.korea.ac.kr/user/boardList.do?
-    boardId=134&siteId=university&page=1&id=university_060103000000&
-    boardSeq=493471&command=albumView"><img src="background background/imag
-    bg.jpg" alt="이미지 대한 설명"></a>
-   
-   
-   <div class="content">
-     <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
-    siteId=university&page=1&id=university_060103000000&boardSeq=493471&
-    command=albumView"></a>
-     <div>카드뉴스의 제목1</div>
-     <a href=""></a>
-   </div>
-   </li>
-    </ul>
-  </div>
-</body>
-</html>
+        <!-- .thumb>a>img -->
+        <div class="thumb">
+            <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
+     siteId=university&page=1&id=university_060103000000&boardSeq=493471&
+     command=albumView">
+              <img src="background/images/bg.jpg" alt="이미지에대한 설명" />
+            </a>
+          </div>
+          <!-- .content>a+div+a -->
+          <div class="content">
+            <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
+     siteId=university&page=1&id=university_060103000000&boardSeq=493471&
+     command=albumView">
+            카드뉴스의 제목1
+            </a>
+            <div>카드뉴스의 설명 간단 설명</div>
+            <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
+     siteId=university&page=1&id=university_060103000000&boardSeq=493471&
+     command=albumView">
+              Read more
+            </a>
+          </div>
+        </li>
+        <li>
+          <!-- .thumb>a>img -->
+          <div class="thumb">
+            <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
+     siteId=university&page=1&id=university_060103000000&boardSeq=493471&
+     command=albumView">
+              <img src="background/images/bg.jpg" alt="이미지에대한 설명" />
+            </a>
+          </div>
+          <!-- .content>a+div+a -->
+          <div class="content">
+            <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
+     siteId=university&page=1&id=university_060103000000&boardSeq=493471&
+     command=albumView">
+            카드뉴스의 제목1
+            </a>
+            <div>카드뉴스의 설명 간단 설명</div>
+            <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
+     siteId=university&page=1&id=university_060103000000&boardSeq=493471&
+     command=albumView">
+              Read more
+            </a>
+          </div>
+        </li>
+        <li>
+          <!-- .thumb>a>img -->
+          <div class="thumb">
+            <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
+     siteId=university&page=1&id=university_060103000000&boardSeq=493471&
+     command=albumView">
+              <img src="background/images/bg.jpg" alt="이미지에대한 설명" />
+            </a>
+          </div>
+          <!-- .content>a+div+a -->
+          <div class="content">
+            <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
+     siteId=university&page=1&id=university_060103000000&boardSeq=493471&
+     command=albumView">
+            카드뉴스의 제목1
+            </a>
+            <div>카드뉴스의 설명 간단 설명</div>
+            <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
+     siteId=university&page=1&id=university_060103000000&boardSeq=493471&
+     command=albumView">
+              Read more
+            </a>
+          </div>
+        </li>
+        <li>
+          <!-- .thumb>a>img -->
+          <div class="thumb">
+            <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
+     siteId=university&page=1&id=university_060103000000&boardSeq=493471&
+     command=albumView">
+              <img src="background/images/bg.jpg" alt="이미지에대한 설명" />
+            </a>
+          </div>
+          <!-- .content>a+div+a -->
+          <div class="content">
+            <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
+     siteId=university&page=1&id=university_060103000000&boardSeq=493471&
+     command=albumView">
+            카드뉴스의 제목1
+            </a>
+            <div>카드뉴스의 설명 간단 설명</div>
+            <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
+     siteId=university&page=1&id=university_060103000000&boardSeq=493471&
+     command=albumView">
+              Read more
+            </a>
+          </div>
+        </li>
+        <li>
+          <!-- .thumb>a>img -->
+          <div class="thumb">
+            <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
+     siteId=university&page=1&id=university_060103000000&boardSeq=493471&
+     command=albumView">
+              <img src="background/images/bg.jpg" alt="이미지에대한 설명" />
+            </a>
+          </div>
+          <!-- .content>a+div+a -->
+          <div class="content">
+            <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
+     siteId=university&page=1&id=university_060103000000&boardSeq=493471&
+     command=albumView">
+            카드뉴스의 제목1
+            </a>
+            <div>카드뉴스의 설명 간단 설명</div>
+            <a href="https://www.korea.ac.kr/user/boardList.do?boardId=134&
+     siteId=university&page=1&id=university_060103000000&boardSeq=493471&
+     command=albumView">
+              Read more
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </body>
+  </html>
+  
+     
+     
+     
+     
+     
+     
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
