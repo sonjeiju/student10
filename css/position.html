@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrap {
+      margin: 50px;
+      background-color: #ccc;
+      height: 2000px;
+    }
+
+    .a {
+      background-color: #999;
+    }
+
+    .box {
+      height: 150px;
+      width: 150px;
+      border: 1px solid #000;
+    }
+
+    .box1,
+    .box4 {
+      background-color: #ef8;
+    }
+
+    .box2,
+    .box5 {
+      background-color: #f8e;
+    }
+
+    .box3,
+    .box6 {
+      background-color: #8ef;
+    }
+
+    .box .child {
+      background-color: #f00;
+      left: 0%;
+      top: 0;
+    }
+
+    .box1 {
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+
+    .box3 {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+    }
+
+    .box5 {
+      position: fixed;
+      right: 0;
+      top: 0;
+    }
+
+    .box6 {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="a">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, vero rerum mollitia dolores quae
+      aspernatur, temporibus repellendus voluptatum magni eligendi nostrum ipsum voluptas est dolorem maiores quo odio
+      impedit cumque.</div>
+  </div>
+  <div class="box box1">box1</div>
+  <div class="box box2">box2
+    <div class="box child">box2-2</div>
+  </div>
+  <div class="box box3">box3</div>
+  <div class="box box4">box4
+    <div class="box child">box4-2</div>
+  </div>
+  <div class="box box5">box5</div>
+  <div class="box box6">box6</div>
+</body>
+
+</html>
