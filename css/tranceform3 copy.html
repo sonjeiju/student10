@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tranceform3</title>
+  <style>
+     * {margin: 0; padding: 0;}
+   body{margin: 50px;
+   }
+  .row{
+     margin: 50px; background-color: #ccc;
+     /* float된 자식을 인식 */
+     overflow: hidden;
+     margin: 0 -10px;
+   }
+  .row::after{
+    content: '';display: block; clear: both;
+   }
+  .row-multi .box{
+    margin-bottom: 20px;
+   }
+  .box {
+      /* inline-block 인라인 텍스트 취급 */
+      /* display: inline-block; */
+      float: left:;
+      width: 33.33%;
+      /* background-color: #999; */
+      /* border: 1px solid #000; */
+      box-sizing: border-box;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    
+    .box:hover .img-wrap{
+      transform: scale(1);
+      transform-origin: center;
+      /* 스타일이 변화하는 과정을 애니메이션으로 표시 */
+      transition: all 0.2s;
+    }
+    .box .box-inner{
+      /* height: 200px; */
+      background-color: #333;
+      border: 1px solid #ef8;
+   }
+
+   .box .box-inner .img-wrap{
+    text-align: center;
+    overflow: hidden;
+    transform: scale(0.8);
+     /* 스타일이 변화하는 과정을 애니메이션으로 표시 */
+     transition: all 0.5s;
+  }
+   .box .box-inner .desc{
+    background-color: #fff;
+    padding: 0.5rem 1rem;}
+
+ </style>
+</head>
+<body>
+  <div class="row">
+    <!-- .box.box$*8>.box-inner>{box$} -->
+    <div class="box box1">
+      <div class="box-inner">
+        <div class="img-wrap"><img src="background/images/img1.png" alt="">
+        </div>
+        <div class="desc">이미지설명</div>
+      </div>
+    </div>
+    <div class="box box2">
+      <div class="box-inner">
+        <div class="img-wrap"><img src="background/images/img2.png" alt="">
+        </div>
+        <div class="desc">이미지설명</div>
+      </div>
+    </div>
+    <div class="box box3">
+      <div class="box-inner">
+        <div class="img-wrap"><img src="background/images/img3.png" alt="">
+        </div>
+        <div class="desc">이미지설명</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
