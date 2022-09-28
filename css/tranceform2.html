@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tranceform2</title>
+  <style>
+    *{margin:0 ;padding: 0;}
+    body{
+      margin: 50px;
+    }
+    .row{
+      margin: 50px; background-color: #ccc;
+      /* float된 자식을 인식 */
+      overflow: hidden;
+      margin: 0 -10px;
+    }
+    .row::after{
+        content: '';display: block; clear: both;
+      }
+      .row-multi .box{
+        margin-bottom: 20px;
+      }
+    .box{
+      /* inline-block 인라인 텍스트 취급 */
+      /* dispay: inline-block; */
+        float :left;
+        width: 25%; 
+        /* background-color: #999; */
+        /* border: 1px solid #000; */
+        box-sizing:  border-box ;
+        padding-left: 10px;
+        padding-right: 10px ;
+     }
+     .box:hover{
+      transform:scale(1.5);
+      transform-origin: center;
+    }
+      .box .box-inner{
+       height: 200px;
+       background-color: #333;
+       border: 1px solid #ef8;
+      }
+
+      </style>
+</head>
+<body>
+  <div class="row row-multi">
+    <!-- .box.box$*8>.box-inner>{box$} -->
+    <div class="box box1">
+      <div class="box-inner">box1</div>
+    </div>
+    <div class="box box2">
+      <div class="box-inner">box2</div>
+    </div>
+    <div class="box box3">
+      <div class="box-inner">box3</div>
+    </div>
+    <div class="box box4">
+      <div class="box-inner">box4</div>
+    </div>
+    <div class="box box5">
+      <div class="box-inner">box5</div>
+    </div>
+    <div class="box box6">
+      <div class="box-inner">box6</div>
+    </div>
+    <div class="box box7">
+      <div class="box-inner">box7</div>
+    </div>
+    <div class="box box8">
+      <div class="box-inner">box8</div>
+    </div>
+  </div>
+</body>
+</html>

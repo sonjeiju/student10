@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sticky1</title>
+  <style>
+    *{margin: 0; padding: 0;box-sizing: border-box;}
+  .wrap{margin: 0 50px;
+    background-color: #ccc;
+    height: 4000px;}
+    dl{background-color: #ef8;
+      padding: 50px 0;
+
+    }
+    dt{
+      /* sticky 영향 */
+      position: sticky;
+      top: 0;
+      /* sticky 영향 */
+      background-color: #999;
+      border-top: 2px solid #000;
+      border-bottom: 1px solid #f00;
+      padding: 1rem 1.5rem;
+      margin-top: 1rem;}
+    dd{
+      background-color: #fff;
+      padding: 1.5rem;}
+    dd+dd
+    {border-top: 1px solid #00b;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <dl>
+    <dl>
+      <dt>용어정의1</dt>
+      <dt>용어정의1</dt>
+      <dd class="dsc desc1">용어설명01</dd>
+      <dd class="dsc desc1">용어설명01</dd>
+      <dd class="dsc desc2">용어설명02</dd>
+      <dd class="dsc desc2">용어설명02</dd>
+      <dd class="dsc desc3">용어설명03</dd>
+      <dd class="dsc desc3">용어설명03</dd>
+      <dd class="dsc desc4">용어설명04</dd>
+      <dd class="dsc desc4">용어설명04</dd>
+      <dd class="dsc desc5">용어설명05</dd>
+      <dd class="dsc desc5">용어설명05</dd>
+      <dd class="dsc desc6">용어설명06</dd>
+      <dd class="dsc desc6">용어설명06</dd>
+      <dd class="dsc desc7">용어설명07</dd>
+      <dd class="dsc desc7">용어설명07</dd>
+      <dd class="dsc desc8">용어설명08</dd>
+      <dd class="dsc desc8">용어설명08</dd>
+      <dd class="dsc desc9">용어설명09</dd>
+      <dd class="dsc desc9">용어설명09</dd>
+      <dd class="dsc desc10">용어설명10</dd>
+      <dd class="dsc desc10">용어설명10</dd>
+    </dl>
+  </div>
+</body>
+</html>
