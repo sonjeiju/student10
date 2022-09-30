@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex layout - header 3단 레이아웃</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0
+    }
+
+    .container {
+      padding: 1rem;
+      width: 85%;
+    }
+    
+    .parent{
+      display: flex;
+      align-items: center;
+
+      position: relative;
+
+      background-color: #ccc;
+    }
+
+    .parent .child{
+     background-color: #999;}
+    .logo{
+     width: 150px;
+     height: 150px;
+    }
+ 
+  .navigation{
+    /* 너비 */
+    width: 200px;
+    line-height: 80px;
+  }
+  
+  .util-top{
+    /* 기중 요소 지정 */
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+    /* 너비 80px 높이 60px */
+    width: 80px;
+    height: 60px;
+  }
+
+   
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="parent">
+      <div class="logo child">
+        logo
+      </div>
+      <div class="navigation child">
+        nav
+      </div>
+      <div class="util-top child">
+        util-top
+      </div>
+    </header>
+  </div>
+</body>
+
+</html>
