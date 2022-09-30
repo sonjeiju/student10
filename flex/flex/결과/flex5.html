@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex layout - header 1row 3단 레이아웃2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        padding: 1rem;
+        min-width: 960px;
+      }
+
+      .parent {
+        display: flex;
+        align-items: center;
+
+        min-height: 100px;
+        background-color: #ccc;
+      }
+
+      .child {
+        /*flex:none; flex:0 0 auto와 동일*/
+        /*flex item의 크기고정크기*/
+        flex: none;
+
+        min-height: 50px;
+        background-color: #999;
+        text-align: center;
+      }
+
+      .parent .logo {
+        width: 150px;
+      }
+
+      .parent .navigation {
+        min-width: 450px;
+        margin-left: 1rem;
+      }
+
+      .parent .search {
+        /*.search를 오른쪽으로 붙이기 위해서 margin-left:auto 지정*/
+        margin-left: auto;
+        width: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="parent">
+        <div class="logo child">logo</div>
+        <div class="navigation child">nav</div>
+        <div class="search child">search</div>
+      </header>
+    </div>
+  </body>
+</html>

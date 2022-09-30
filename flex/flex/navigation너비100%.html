@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex layout - navigatin </title>
+</head>
+<style>
+   * {
+      margin: 0;
+      padding: 0
+    }
+    ol,ul,li{list-style: none;}
+
+    .container {
+      padding: 1rem;
+      min-width: 960px;
+    }
+
+    .parent {
+      display: flex;
+      justify-content: center;
+      background-color: #ccc;
+
+    }
+
+    .navigation{
+      width:100%;
+
+    }
+    .navigation> ul{
+      display: flex;
+    }
+    .navigation>ul>li{
+      /* flex-grow:1; */
+
+      border-left:1px solid #000;
+      box-sizing: border-box;
+    }
+
+    .navigation>ul>li:last-child{
+      border-right: 1px solid #000;
+    }
+
+    .navigation>ul>li>a{
+      display: block;
+      padding: 0 1rem;
+      line-height: 70px;
+      text-align: center;
+    }
+</style>
+<body>
+  <div class="container">
+    <header class="parent">
+      <div class="navigation child">
+        <ul>
+          <li><a href="">menu1</a></li>
+          <li><a href="">menu2</a></li>
+          <li><a href="">menu3</a></li>
+          <li><a href="">menu4</a></li>
+          <li><a href="">menu5</a></li>
+          <li><a href="">menu6</a></li>
+          <li><a href="">menu7</a></li>
+        </ul>
+      </div>
+    </header>
+  </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex layout 수직수평가운데</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      }
+    
+   .container{}
+   .parent{
+    display: flex;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #ccc;
+    justify-content: center;
+    align-items: center;
+
+   }
+   .child{
+  }
+  .child span{
+   display: block;
+   text-align: center;
+  }
+  .child span:nth-last-of-type(1){
+    font-size: 60px;
+    font-weight: 700;
+
+    line-height: 1.5;
+  }
+  .child span:nth-last-of-type(2){
+  font-size: 50px;
+  font-weight: 700;
+  
+  line-height: 1.5;
+}
+  
+  </style>
+</head>
+
+<body>
+  <div class="contianer">
+    <div class="parent">
+      <div class="child">
+        <span>Header Title</span>
+        <span>short description some word</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
