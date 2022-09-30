@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flax연습</title>
+<style>
+  *{margin: 0;padding: 0;}
+
+  .wrap{
+    margin: 50px;
+    padding: 1rem;
+    background-color: #ccc;
+
+  }
+
+  .parent{
+    /* min-width: 1190px; */
+    max-width: 1190px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    /* 플렉스 컨테이너보다 플렉스아이템 총합 크기 클때
+    즉 플렉스 */
+   
+    flex-wrap: wrap;
+    
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 1rem;
+    box-sizing: border-box;
+     /* background-color: #999; */
+  }
+
+  .parent .item{
+    /* 플렉스 컨테이너 공간에 맞게 플렉스아이템 확장
+    flex-grow: 0; 기본값 */
+    flex-grow: 0;
+    /* 플렉스 컨테이너 공간에 맞게 축소
+    flex-shrink: 1;기본값 */
+    flex-shrink: 0;
+
+    width: 33.33px;
+    
+    padding: 1rem;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    /* background-color: #666; */
+  }
+  .parent .item .inner{
+    height: 300px;
+    background-color: #ef8;
+    box-sizing:border-box ;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="parent">
+      <div class="item itrm1">
+        <inner>item1</inner>
+      </div>
+      <div class="item itrm2">
+        <inner>item2</inner>
+      </div>
+      <div class="item itrm3">
+        <inner>item3</inner>
+      </div>
+      <div class="item itrm4">
+        <inner>item4</inner>
+      </div>
+      <div class="item itrm5">
+        <inner>item5</inner>
+      </div>
+      <div class="item itrm6">
+        <inner>item6</inner>
+      </div>
+      <div class="item itrm7">
+        <inner>item7</inner>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
