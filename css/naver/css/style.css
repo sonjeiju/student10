@@ -202,13 +202,35 @@ html {
   font-style: normal;
   line-height: 1.4;
   -webkit-text-size-adjust: none;
+  background-color: #ccc;
+}
+body{
+  --naver-color:#1ec545;
+  --header-height:80px;
+
 }
 /* 레이아웃 */
-
-/* header */
-.header{
-margin: 50px;
+header{
+  position: relative;
+  height: var(--header-height);
+  background-color:#rgba;
 }
+
+ header.header_wrap{
+  display: flex;
+ justify-content: space-between;/* 양끝정렬 여백균등*/
+ align-items: center;/* 교차축 가운데*/
+ background-color: #ef8교차축 가운데
+ margin: 0 auto;
+ max-width: 1600px;
+}
+
+m
+
+/* .header{ */
+/* margin: 50px; */
+/* } */
+
 .header_log{
   /* background: url(img/header_logo.png); */
   /* background-position: center; */
@@ -223,4 +245,130 @@ background-color: #ccc;
   width: 87px;
  height:  17px;
 }
-.header_log a span{}
+nav{
+  background-color: #ccc;
+ /* 작업후 삭제 */
+}
+nav .gnb_menu{
+  /* 를렉스박스 플렋컨테이너 */
+  display: flex;
+}
+nav .gnb_menu_list{
+
+}
+
+nav .gnb_menu_list a.gnb_menu_item{
+position: relative;/* nav .gnb_menu _list a.gnb_menu_itrm:break-after: 
+기준요소;;*/
+display: block;
+margin: 0 30px;
+height: var(--header-height);
+padding-top:25px;
+font-size: 18px;
+color: #000;
+}
+nav .gnb_menu_list a.gnb_menu_item:after{
+  content: '';
+  display: block;
+  position: absolute;/* 기준요소*/
+  left: 0;
+  bottom: 20px;
+  width: calc(100% + 3px);/* 계산기산수*/
+  height: 2px;
+  background-color: var(--naver-color);
+  transform: scale(0);
+}
+nav .gnb_menu_list a.gnb_menu_item:after,
+nav .gnb_menu_list a.gnb_menu_item:focus:after
+{
+  transform: scale(1);
+  transform: transform o.5s;
+  transform-origin: 0 0 ;
+}
+  nav .gnb_menu_list .gnb_dropMenu_wrap{
+  position: absolute;/* 기준요소*/
+  left: 0; top: var(--header-height);
+  width: 100%;
+  background-color: var(--naver-color);
+  display: flex;
+  justify-content: center;
+  display: none;/* 테스트후 삭제*/
+}
+ /* 대메뉴 첫번째에 해당하는 서브메뉴
+  .gnb_menu_list 대메뉴 첫번째
+  .gnb_dropMenu_wrap 서브메뉴
+   */
+ nav .gnb_menu_list:nth-of-type(5) .gnb_dropMenu_wrap{
+   /* display: flex; */
+   /* 서브작업후 삭제 */
+ }
+.gnb_dropMenu_wrap > li{
+  width: 190px;
+  height: 340px;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  border-left:1px solid #4bd16a;
+}
+.gnb_dropMenu_wrap > li:last-child;
+border-left:1px solid #4bd16a;
+.gnb_dropMenu_wrap .gnb_dropMenu{
+  background-color: #ccc;
+}
+.gnb_dropMenu li{
+  padding: 0.2rem 0;
+}
+.gnb_dropMenu li.depth_blank{
+  margin-bottom: 1rem;
+}
+.gnb_dropMenu li .gnb_dropMenu_item{
+  color: #000;}
+ 
+
+  /* header_util */
+.header_util{background-color: #999;}
+.header_util .header_lang{}
+.header_lang a{
+  color: #000; 
+  font-size: 0.8rem;
+}
+.header_lang a[aria-selected="false"]{
+  opacity:0.5;
+}
+
+.header_lang a :first-child{
+  position: relative;
+  margin:0 20px 0 0;
+  color: #000;
+}
+.header_lang a :first-child:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top:0 ;left:36px;
+  width: 2px ; height: 100%;
+  background-color: #000;
+}
+.header_util .sitemap_box{
+  width: 24px ; height: 24px;
+  margin-left:2rem;
+  background-color: #f8e;
+}
+.sitemap_box .btn.sitemap{
+  display:block
+  width: 100% ; height: 100%;
+  position:relative;
+}
+.sitemap_box .btn_sitemap .btn_line{
+  display:block;
+  position:absolute;
+  right: 0 ; 
+  height: 2px;
+  background-color: #000;
+}
+
+.sitemap_box  .btn_sitemap span:nth-of-type(2){
+top:2px; width:calc(100% - 5px);}
+.sitemap_box  .btn_sitemap span:nth-of-type(3){
+  top:11px; width:calc(100% - 8px);}
+.sitemap_box  .btn_sitemap span:nth-of-type(4){
+  top:20px; width:100%; }
