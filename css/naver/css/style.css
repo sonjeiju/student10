@@ -285,6 +285,7 @@ nav .gnb_menu_list .gnb_dropMenu_wrap{
   display: flex;
   justify-content: center;
   display: none; /*테스트후 삭제*/
+  z-index: 10000;
 }
 /* 대메뉴 첫번째에 해당 서브메뉴
 .gnb_menu_list  대메뉴 첫번째
@@ -373,3 +374,37 @@ nav .gnb_menu_list:nth-of-type(5) .gnb_dropMenu_wrap{
   top:11px; width: calc(100% - 8px);}
 .sitemap_box .btn_sitemap span:nth-of-type(4){
   top:20px; width:100%;}
+  /* 플러그인 */
+  /* bxslider */
+  .bx-wrapper .bx-controls-direction a{
+    width: 46px; height: 46px;
+  }
+
+
+  .bx-wrapper .bx_prev{
+    /* background-image: url(../../img/ko/sprite.png) */
+    /* -296px -99 no-repeat; */
+    /* box-sizing: 474px 1500px; */
+  }
+  .bx-wrapper .bx_prev:hover,
+  .bx-wrapper .bx_prev:focus{
+    background-position: -296px -99px;
+  }
+  
+  .bx-wrapper .bx-next:hover,.bx-wrapper  {
+    background-image: none;}
+     /*  */
+    .bx-wrapper .bx-pager, .bx-wrapper ..bx-controls-auto
+    {bottom: 30px;}
+   .bx-wrapper .bx-pager, .bx-wrapper ..bx-next:focus
+  {width: 24px; height: 4px;; 
+    border: radius:0;
+    border:0 none
+   }
+
+   .bx-wrapper .bx-next:hover,.bx-wrapper {
+   border-left:2px solid#fff;
+   border-top: 2px solid#fff;
+   transform: rotate(135deg) translate: (0,50%);
+   transform-origin:0,0;
+   right: -25px;}
