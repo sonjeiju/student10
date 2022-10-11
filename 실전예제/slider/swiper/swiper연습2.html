@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="src/swiper8.4.3-bundle">
+  <link rel="stylesheet" href="css/style2.css">
+  href="src/swiper8.4.3-bundle">
+</head>
+<body>
+  <div class="swiper mySwiper">
+  <ul class="swiper-wrapper">
+  <li><img class="swiper-slide"><img src="..imags/img_main_slide10.jpg" /></li>
+  <li><img class="swiper-slide"><img src="../imags/img_main_slide7.jpg" /></li>
+  <li><img class="swiper-slide"><img src="../imags/img_main_slide9.jpg" /></li>
+ </ul>
+ <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <script src="">
+       
+      <script>
+        var swiper1 = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            // type: "progressbar",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+ </body>
+ </html>
