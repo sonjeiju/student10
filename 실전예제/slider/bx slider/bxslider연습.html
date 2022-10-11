@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/css/jquery.bxslider.css" rel="stylesheet" />
+  <title>bxslider연습</title>
+</head>
+<body>
+  <!-- bxSlider CSS file -->
+<link href="jquery.bxslider.css" rel="stylesheet" />
+
+<ul class="bxslider">
+  <li><img src="../imags/img_main_slide10.jpg" /></li>
+  <li><img src="../imags/img_main_slide7.jpg" /></li>
+  <li><img src="../imags/img_main_slide9.jpg" /></li>
+</ul>
+
+<!-- jQuery library -->
+<script src="src/vendor/jquery-3.1.1.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="src/js/jquery.bxslider.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.bxslider').bxSlider({
+			mode: 'horizontal',
+			moveSlides: 1,
+			slideMargin: 40,
+			infiniteLoop: true,
+			slideWidth: 660,
+			// minSlides: 3,
+			speed: 800,
+		});
+	});
+</script>
+
+</body>
+</html>
