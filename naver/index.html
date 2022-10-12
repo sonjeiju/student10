@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>index.html</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>naver corp bxslider</title>
+  <link rel="stylesheet" href="src/css/jquery.bxslider.css">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -394,36 +394,65 @@
       </div>
     </div>
   </header>
-  <!--//header  -->
-  <!--본문  //.container  -->
+  <!-- //header -->
+  <!-- 본문 .container -->
   <div class="container">
-  <!-- // 슬라이드 .main_slide  -->  
+    <!-- 슬라이드 .main_slide -->
     <div class="main_slide">
-      <div> 
+      <div>
+        <div>
+          <a href="https://1784.navercorp.com" target="_blank" class="slide_info_box" >
+            <h2 class="slide_logo"><span class="blind">네이버 1784</span></h2>
+            <div class="slide_text_box">
+              <p class="slide_title"><strong>네이버 1784에서<br>우리는 혁신을 현실로 만들고 있습니다.</strong></p>
+              <p class="slide_text"><span>네이버의 다양한 기술들로 실험과 도전, 융합을 통해<br>새로운 기회와 가능성을 만들어 갑니다.</span></p>
+            </div>
+          </a>
+        </div>
+        <div><img src="img/main/img_main_slide7.jpg" /></div>
+      </div>
+      <div>
         <div></div>
-          <div><img src="img/main/img_main_slide7.jpg" /></div>
-    </div>
+        <div><img src="img/main/img_main_slide9.jpg" /></div>
+      </div>
       <div>
-       <div></div>
-       <div><img src="img/main/img_main_slide9.jpg" /></div>
+        <div></div>
+        <div><img src="img/main/img_main_slide10.jpg" /></div>
+      </div>
     </div>
-      <div>
-       <div></div>
-       <div><img src="img/main/img_main_slide10.jpg" /></div>
-    </div>
-</div>
-  <!-- // 슬라이드 .main_slide  -->
-</div>
-  <!-- // 슬라이드 .main_slide  -->
-  </ul>
+    <!-- //슬라이드  .main_slide-->
   </div>
-  </div>
-  <script src="src/" href="css/style.css" />
-  $
-  speed: 400'
-  auto
-  stopAutocontrols; ture
-  
+  <!-- //본문  //.container-->
+
+
+  <footer>
+
+  </footer>
+
+
+  <!-- jquery 연결 -->
+  <script src="src/vendor/jquery-3.1.1.min.js"></script>
+  <!-- bxslide 플러그인 연결 -->
+  <script src="src/js/jquery.bxslider.js"></script>
+  <!-- bxlide 적용 -->
+  <script>
+    $(document).ready(function(){
+      $('.main_slide').bxSlider({
+        // mode: 'horizontal',  //움직이는 방향 수평
+        //mode: 'vertical', //움직이는 방향 수직
+        mode:'fade',   //슬라이드 페이드인 아웃
+        moveSlides: 1,    //한번에 움직일 슬라이드 수
+        infiniteLoop: true, //무한루프
+        // slideWidth: 660,  슬라이드의 크기 지정
+        //minSlides: 2, 한번에 보여질 슬라이드 수
+        //maxSlides: 2, 한번에 보여질 슬라이드 수
+        speed: 400,
+        auto: true,
+        // autoControls: true,
+        stopAutoOnClick: true,
+      });
+    });
+  </script>
 </body>
 
 </html>
