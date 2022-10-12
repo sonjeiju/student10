@@ -20,13 +20,21 @@
 
     .parent {
       display: flex;
+      flex-wrap: nowrap;
       justify-content: center;
+      align-items: stretch;
       background-color: #ccc;
 
     }
 
     .navigation{
-      width:100%;
+      /* width:100%; */
+      /* 플렉스 아이템이 컨테이너에 맞게 확장여부 */
+      flex-grow: 0;
+      /* 플렉스 아이템이 컨테이너에 맞게 확장여부 */
+      flex-shrink: 1;
+      width: ;
+      flex-basis: auto;
 
     }
     .navigation> ul{
