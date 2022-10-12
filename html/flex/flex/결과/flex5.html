@@ -16,7 +16,38 @@
         min-width: 960px;
       }
 
-     
+      .parent {
+        display: flex;
+        align-items: center;
+
+        min-height: 100px;
+        background-color: #ccc;
+      }
+
+      .child {
+        /*flex:none; flex:0 0 auto와 동일*/
+        /*flex item의 크기고정크기*/
+        flex: none;
+
+        min-height: 50px;
+        background-color: #999;
+        text-align: center;
+      }
+
+      .parent .logo {
+        width: 150px;
+      }
+
+      .parent .navigation {
+        min-width: 450px;
+        margin-left: 1rem;
+      }
+
+      .parent .search {
+        /*.search를 오른쪽으로 붙이기 위해서 margin-left:auto 지정*/
+        margin-left: auto;
+        width: 100px;
+      }
     </style>
   </head>
 

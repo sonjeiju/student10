@@ -16,7 +16,34 @@
         min-width: 960px;
       }
 
-     
+      .parent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        min-height: 100px;
+        background-color: #ccc;
+      }
+
+      .child {
+        flex-shrink: 0;
+
+        background-color: #999;
+        text-align: center;
+      }
+
+      .child + .child {
+        margin-left: 1rem;
+      }
+
+      .parent .logo {
+        width: 150px;
+        height: 80px;
+      }
+
+      .parent .util-top {
+        width: 100px;
+      }
     </style>
   </head>
 
@@ -24,7 +51,6 @@
     <div class="container">
       <header class="parent">
         <div class="logo child">logo</div>
-        <div class="navigation child">nav</div>
         <div class="util-top child">util-top</div>
       </header>
     </div>

@@ -12,7 +12,28 @@
       padding: 0
     }
 
-  
+    .parent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+
+    .parent .child span {
+      display: block;
+      text-align: center;
+    }
+
+    .parent .child span:nth-child(1) {
+      font-size: 5rem;
+    }
+
+    .parent .child span:nth-child(2) {
+      font-size: 1.5rem;
+      text-align: center;
+      letter-spacing: 0.3rem;
+    }
   </style>
 </head>
 
