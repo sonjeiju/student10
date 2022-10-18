@@ -1,82 +1,180 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>단연습</title>
-  <style>
-    *{margin: 0;padding: 0;box-sizing: border-box;
-    /* 단스타일 여기부터 */
-    * 단스타일 여기부터}
-    .my-dan .my-row{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-between;/*양끝정렬 여백 동일*/
-      align-items: center;
-      align-content: center;
-      margin-bottom: 50px;
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>단템플릿</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrap {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #ef8;
+      } /*테스트용*/
+      /*단스타일 여기서부터*/
+      .my-dan .my-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between; /*양끝정렬 여백 동일*/
+        align-items: center;
+        align-content: center;
+        margin-bottom: 50px;
+      }
+
+      .my-dan.padding5 .my-row {
+        margin-left: -5px;
+        margin-right: -5px;
+      }
+      .my-dan.padding10 .my-row {
+        margin-left: -10px;
+        margin-right: -10px;
+      }
+      .my-dan.padding20 .my-row {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .my-dan.padding30 .my-row {
+        margin-left: -30px;
+        margin-right: -30px;
+      }
+
+      .my-dan .my-row .my-col {
+        flex-grow: 1;
+        flex-shrink: 1;
+        box-sizing: border-box;
+      }
+
+      .my-dan.grid1 .my-row .my-col {
+        flex-basis: 100%;
+      }
+      .my-dan.grid2 .my-row .my-col {
+        flex-basis: 50%;
+      }
+      .my-dan.grid3 .my-row .my-col {
+        flex-basis: 33.33%;
+      }
+      .my-dan.grid4 .my-row .my-col {
+        flex-basis: 25%;
+      }
+
+      .my-dan.padding5 .my-row .my-col {
+        padding: 0 5px;
+      }
+      .my-dan.padding10 .my-row .my-col {
+        padding: 0 10px;
+      }
+      .my-dan.padding20 .my-row .my-col {
+        padding: 0 20px;
+      }
+      .my-dan.padding30 .my-row .my-col {
+        padding: 0 30px;
+      }
+
+      .my-dan .my-row .my-col-inner {
+       
+      }
+      .my-dan .my-row .my-col-inner img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /*배너매니저 유튜브 동영상 스타일*/
+    .df-bannermanager{
+      width:100%;
+      /* max-width:최대크기px; */
     }
-
-    .my-dan .my-col{
-      flex-grow: 1;
-      flex-shrink: 1;
-      box-sizing: border-box;
-    } 
-    .my-dan.grid1 .my-row .my-col{flex-basis: 100%;}
-    .my-dan.grid2 .my-row .my-col{flex-basis: 50%}
-    .my-dan.grid3 .my-row .my-col{flex-basis: 33.33%}
-    .my-dan.grid4 .my-row .my-col{flex-basis: 25%}
-    
-    .my-dan .my-row.padding10 .my-row .my-col{padding: 0 10px;}
-    .my-dan .my-row.padding20 .my-row .my-col{padding: 0 20px;}
-    .my-dan .my-row.padding30 .my-row .my-col{padding: 0 30px;}
-
-    .my-dan .my-col-inner{
-      background-color: #ccc;
-      border: 1px solid #000;
+    .df-bannermanager > div{
+      position: relative; padding-top:56.25%;
+      background-color: #000;
     }
-    .my-dan .my-col-inner{width: 100%; height: auto;display: block;}
-
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <div class="my-dan">
-      <my-row>
-        <my-row>
-          <div class="my-col">
-        </my-row>
-      </my-row>
-      <div class="my-col-inner">
-    여기에서 배너,동영상,슬라이드요소복사
-      </div>
-      <div class="my-dan grid1">
-        <div class="my-col">
-        <div class="my-col-inner">
-      여기에서 배너,동영상,슬라이드요소복사
-        </div>
-        <div class="my-dan grid2">
-          <div class="my-col">
-          <div class="my-col-inner">
-        여기에서 배너,동영상,슬라이드요소복사
-      </div>
+    .df-bannermanager > div iframe{
+      position: absolute;
+      left:0;  top:0; 
+      width:100%;
+      height: 100%;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 3단 -->
       <div class="my-dan grid3">
-        <div class="my-col">
-        <div class="my-col-inner">
-      여기에서 배너,동영상,슬라이드요소복사       
-      
-      </div>
-          <div class="my-dan grid3 padding10">
-            <div class="my-col">
+        <div class="my-row">
+          <div class="my-col">
             <div class="my-col-inner">
-          여기에서 배너,동영상,슬라이드요소복사
-          
-            </div>         
+              여기에서 배너,동영상,슬라이드요소복사
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-col-inner">
+              여기에서 배너,동영상,슬라이드요소복사
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-col-inner">
+              여기에서 배너,동영상,슬라이드요소복사
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //3단 -->
+      <!-- 3단 단사이여백-->
+      <div class="my-dan grid3 padding5">
+        <div class="my-row">
+          <div class="my-col">
+            <div class="my-col-inner">
+              여기에서 배너,동영상,슬라이드요소복사
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-col-inner">
+              여기에서 배너,동영상,슬라이드요소복사
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-col-inner">
+              여기에서 배너,동영상,슬라이드요소복사
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //3단 단사이여백 -->
+
+      <!-- 2단 -->
+      <div class="my-dan grid2">
+        <div class="my-row">
+          <div class="my-col">
+            <div class="my-col-inner">
+              여기에서 배너,동영상,슬라이드요소복사
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-col-inner">
+              여기에서 배너,동영상,슬라이드요소복사
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //2단 -->
+
+      <!-- 1단 -->
+      <div class="my-dan grid1">
+        <div class="my-row">
+          <div class="my-col">
+            <div class="my-col-inner">
+              여기에서 배너,동영상,슬라이드요소복사
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //1단 -->
     </div>
-  </div>
-</body>
+  </body>
 </html>
-<!--3단 사이여백-->
-<div class="myfolder </div>
