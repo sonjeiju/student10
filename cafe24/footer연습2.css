@@ -48,6 +48,7 @@
 #footer .inner .bt_sns {
   order:3;
   flex-basis:25%;
+  max-width: 255px;
   text-align:left;
   display: flex;
   justify-content: flex-end;
