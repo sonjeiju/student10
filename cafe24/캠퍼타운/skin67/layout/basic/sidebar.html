@@ -1,0 +1,45 @@
+<aside id="aside" module="layout_slidePackage" data-ez="contents-025lg7e-1">
+    <!--@css(/layout/basic/css/slideMenu.css)-->
+    <!--@js(/layout/basic/js/slide_menu.js)-->
+    <nav class="navigation-menu" role="navigation">
+		<div module="Layout_multishopList">
+			<button type="button" class="toggle">{$current_language} <i aria-hidden="true" class="icon icoArrowRight"></i></button>
+			<ul module="Layout_multishopListitem">
+				<li class="{$selected_class}">
+					<a href="//{$shop_domain}/">{$locale_language}</a>
+				</li>
+				<li class="{$selected_class}">
+					<a href="//{$shop_domain}/">{$locale_language}</a>
+				</li>
+			</ul>
+		</div><!-- //Layout_multishopList -->
+
+		<div class="navigation_state" data-ez-group="top-util-menu" data-ez-role="list">
+			<a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
+			<a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
+			<a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a>
+			<a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
+			<a data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
+			<a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
+			<a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a>
+		</div><!-- //navigation_state -->
+
+		<div class="tab_inner">
+			<a class="open" id="slide_category" href="javascript:;">카테고리</a>
+			<a id="slide_community" href="javascript:;">고객센터</a>
+		</div><!-- //tab_inner -->
+
+		<div data-ez-module="menu-side/1"><div id="slideCateList" class="navigation-menu__category">
+  <ul id="slide_add_category"><li><a href="/category/NEW-5%25/75/" class="view">NEW 5%</a><ul class="sub_cate01"><li><a href="/category/%EC%83%88-%EC%83%81%ED%92%88%EB%B6%84%EB%A5%98/76/" class="view">새 상품분류</a></li></ul></li><li><a href="/category/BEST100/51/" class="view">BEST100</a></li><li><a href="/category/TOP/73/" class="view">TOP</a></li><li><a href="/category/BOTTOM/69/" class="view">BOTTOM</a><ul class="sub_cate01"><li><a href="/category/%EC%84%9C%EB%B8%8C1/70/" class="view">서브1</a></li></ul></li><li><a href="/category/%EC%9B%90%ED%94%BC%EC%8A%A4/68/" class="view">원피스</a><ul class="sub_cate01"><li><a href="/category/%EC%97%B0%EC%8A%B52/71/" class="view">연습2</a></li></ul></li><li><a href="/category/%EC%83%98%ED%94%8C/28/" class="view">샘플</a></li></ul>
+  </div></div><!-- //menu-side/1 -->
+
+        <div module="Layout_BoardInfo" class="tab_community navigation-menu__board">
+            <ul>
+                <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+                <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+            </ul>
+        </div><!-- //tab_community -->
+    </nav>
+    <button type="button" class="btnClose"><i aria-hidden="true" class="icon icoClose"></i>닫기</button>
+</aside>
+<!--#ez="1/2"-->
