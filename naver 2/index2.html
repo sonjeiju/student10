@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>navercorp - swiper</title>
+  <link rel="stylesheet" href="src/css/swiper8.4.3-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- header>.header_wrap>.header_logo+nav+.header_util -->
+  <header>
+    <div class="header_wrap">
+      <h1 class="header_logo">
+        <a href="index.html"><span class="blind">naver</span></a>
+      </h1>
+      <!-- nav -->
+      <nav>
+        <ul class="gnb_menu" role="menu">
+          <!-- .gnb_menu_list 활성화 시, on클래스 추가 // .gnb_menu_list에 호버, 포커스 시, .gnb_menu_item의 aria-expanded="true" // .gnb_dropMenu_wrap slideUp, Down -->
+          <li class="gnb_menu_list" role="menuitem" aria-haspopup="true">
+            <a href="/naver/company" aria-expanded="false" class="gnb_menu_item">네이버</a>
+            <ul class="gnb_dropMenu_wrap">
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li class="depth_blank">
+                    <a href="/naver/company" class="gnb_dropMenu_item"><strong><span>NAVER</span></strong></a>
+                  </li>
+                  <li>
+                    <a href="/naver/company" class="gnb_dropMenu_item"><span class="depth">네이버 소개</span></a>
+                  </li>
+                  <li>
+                    <a href="/naver/1784" class="gnb_dropMenu_item"><span class="depth">1784 소개</span></a>
+                  </li>
+                  <li>
+                    <a href="/naver/milestones" class="gnb_dropMenu_item"><span class="depth">주요연혁</span></a>
+                  </li>
+                  <li>
+                    <a href="/naver/award" class="gnb_dropMenu_item"><span class="depth">수상내역</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li>
+                    <a href="/naver/affiliates" class="gnb_dropMenu_item"><strong><span>주요 관계사</span></strong></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li class="depth_blank">
+                    <a href="/naver/proposalGuide" class="gnb_dropMenu_item"><strong><span>제휴제안</span></strong></a>
+                  </li>
+                  <li>
+                    <a href="/naver/proposalGuide" class="gnb_dropMenu_item"><span class="depth">제휴제안 안내</span></a>
+                  </li>
+                  <li>
+                    <a href="/naver/proposalRegister" class="gnb_dropMenu_item"><span class="depth">제휴제안 등록</span></a>
+                  </li>
+                  <li>
+                    <a href="/naver/proposalView" class="gnb_dropMenu_item"><span class="depth">검토현황 조회</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li>
+                    <a href="/naver/contact" class="gnb_dropMenu_item"><strong><span>CONTACT</span></strong></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="gnb_menu_list" role="menuitem" aria-haspopup="true">
+            <a href="/service/featured" aria-expanded="false" class="gnb_menu_item">서비스</a>
+            <ul class="gnb_dropMenu_wrap">
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li>
+                    <a href="/service/featured"
+                      class="gnb_dropMenu_item"><strong><span>Featured</span><br /><span>Services</span></strong></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li>
+                    <a href="/service/business"
+                      class="gnb_dropMenu_item"><strong><span>For</span><br /><span>Business</span></strong></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li>
+                    <a href="/service/creators"
+                      class="gnb_dropMenu_item"><strong><span>For</span><br /><span>Creators</span></strong></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li>
+                    <a href="/service/developers"
+                      class="gnb_dropMenu_item"><strong><span>For</span><br /><span>Developers</span></strong></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li>
+                    <a href="https://www.naver.com/more.html" class="gnb_dropMenu_item btn_link"
+                      target="_blank"><strong><span>ALL</span><br /><span>SERVICE</span></strong></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="gnb_menu_list" role="menuitem" aria-haspopup="true">
+            <a href="/value/projectFlower" aria-expanded="false" class="gnb_menu_item">가치실현</a>
+            <ul class="gnb_dropMenu_wrap">
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li class="classify depth_blank">
+                    <a href="/value/projectFlower" class="gnb_dropMenu_item"><strong><span>원칙</span></strong></a>
+                  </li>
+                  <li>
+                    <a href="/value/projectFlower" class="gnb_dropMenu_item"><strong class="depth"><span>프로젝트
+                          꽃</span></strong></a>
+                  </li>
+                  <li>
+                    <a href="/value/sustainableManagement" class="gnb_dropMenu_item"><span
+                        class="depth">지속가능경영</span></a>
+                  </li>
+                  <li>
+                    <a href="/value/aiCodeEthics" class="gnb_dropMenu_item"><span class="depth">AI 윤리준칙</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li class="classify">
+                    <a href="/value/businessEthics" class="gnb_dropMenu_item"><strong><span>정책</span></strong></a>
+                  </li>
+                  <li class="classify depth_blank depth_4">
+                    <a href="/value/businessEthics" class="gnb_dropMenu_item"><strong><span>기업윤리</span></strong></a>
+                  </li>
+                  <li class="depth_4">
+                    <a href="/value/businessEthics" class="gnb_dropMenu_item"><span class="depth">기업윤리규범</span></a>
+                  </li>
+                  <li class="depth_4">
+                    <a href="/value/ethicsLineCenter" class="gnb_dropMenu_item"><span class="depth">기업윤리 상담센터</span></a>
+                  </li>
+                  <li class="classify depth_blank depth_4">
+                    <a href="/value/naverReports" class="gnb_dropMenu_item"><strong><span>프라이버시센터</span></strong></a>
+                  </li>
+                  <li class="depth_4">
+                    <a href="/value/naverReports" class="gnb_dropMenu_item"><span class="depth">네이버 리포트</span></a>
+                  </li>
+                  <li class="depth_4">
+                    <a href="/value/privacyNotice" class="gnb_dropMenu_item"><span class="depth">개인정보보호</span></a>
+                  </li>
+                  <li class="depth_4">
+                    <a href="/value/certification" class="gnb_dropMenu_item"><span class="depth">정보보호인증</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li class="classify depth_blank">
+                    <a href="/value/greenInitiative" class="gnb_dropMenu_item"><strong><span>그린 임팩트</span></strong></a>
+                  </li>
+                  <li>
+                    <a href="/value/greenInitiative" class="gnb_dropMenu_item"><span class="depth">그린 이니셔티브</span></a>
+                  </li>
+                  <li>
+                    <a href="/value/greenConnect" class="gnb_dropMenu_item"><span class="depth">그린 커넥트</span></a>
+                  </li>
+                  <li>
+                    <a href="/value/dataCenter" class="gnb_dropMenu_item"><span class="depth">친환경 데이터센터</span></a>
+                  </li>
+                  <li>
+                    <!-- <a href="/value/dataCenter" class="gnb_dropMenu_item"><span class="depth">데이터센터 각</span></a> -->
+                    <a href="/value/greenfactory" class="gnb_dropMenu_item"><span class="depth">친환경 업무공간</span></a>
+                  </li>
+                  <li>
+                    <a href="/value/greenArchives" class="gnb_dropMenu_item"><span class="depth">그린 아카이브</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <!-- <li class="depth_blank">
+                    <a href="/value/happybeenFoundation" class="gnb_dropMenu_item"><strong><span>With Naver</span></strong></a> -->
+                  <li class="classify depth_blank">
+                    <a href="/value/winwin" class="gnb_dropMenu_item"><strong><span>소셜 임팩트</span></strong></a>
+                  </li>
+                  <li>
+                    <a href="/value/winwin" class="gnb_dropMenu_item"><span class="depth">동반성장</span></a>
+                  </li>
+                  <li>
+                    <a href="/value/respectHuman" class="gnb_dropMenu_item"><span class="depth">인권존중</span></a>
+                  </li>
+                  <li>
+                    <a href="/value/happybeenFoundation" class="gnb_dropMenu_item"><span class="depth">재단법인
+                        해피빈</span></a>
+                  </li>
+                  <li>
+                    <a href="/value/naverCultureFoundation" class="gnb_dropMenu_item"><span class="depth">네이버
+                        문화재단</span></a>
+                  </li>
+                  <li>
+                    <a href="/value/connectFoundation" class="gnb_dropMenu_item"><span class="depth">네이버 커넥트
+                        재단</span></a>
+                  </li>
+                  <li>
+                    <a href="/value/accessibility" class="gnb_dropMenu_item"><span class="depth">접근성</span></a>
+                  </li>
+                  <li>
+                    <a href="/value/crisisResponse" class="gnb_dropMenu_item"><span class="depth">재난 위기 대응</span></a>
+                  </li>
+                  <li>
+                    <a href="/value/library" class="gnb_dropMenu_item"><span class="depth">네이버 라이브러리</span></a>
+                  </li>
+                  <li class="classify">
+                    <a href="/value/research" class="gnb_dropMenu_item"><strong><span>리서치</span></strong></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="gnb_menu_list" role="menuitem" aria-haspopup="true">
+            <a href="/promotion/pressReleases" aria-expanded="false" class="gnb_menu_item">홍보</a>
+            <ul class="gnb_dropMenu_wrap">
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li>
+                    <a href="/promotion/pressReleases" class="gnb_dropMenu_item"><strong><span>보도자료</span></strong></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li>
+                    <a href="/promotion/ads" class="gnb_dropMenu_item"><strong><span>TV광고</span></strong></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li>
+                    <a href="/promotion/mediaEvents" class="gnb_dropMenu_item"><strong><span>미디어 행사</span></strong></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li>
+                    <a href="/promotion/communication" class="gnb_dropMenu_item"><strong><span>커뮤니케이션
+                          채널</span></strong></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="gnb_menu_list" role="menuitem" aria-haspopup="true">
+            <a href="/investment/shareholder" aria-expanded="false" class="gnb_menu_item">투자정보</a>
+            <ul class="gnb_dropMenu_wrap">
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li class="depth_blank">
+                    <a href="/investment/shareholder" class="gnb_dropMenu_item"><strong><span>기업지배구조</span></strong></a>
+                  </li>
+                  <li>
+                    <a href="/investment/shareholder" class="gnb_dropMenu_item"><span class="depth">주주구성</span></a>
+                  </li>
+                  <li>
+                    <a href="/investment/directorate" class="gnb_dropMenu_item"><span class="depth">이사회</span></a>
+                  </li>
+                  <li>
+                    <a href="/investment/charter" class="gnb_dropMenu_item"><span class="depth">정관</span></a>
+                  </li>
+                  <li>
+                    <a href="/investment/others" class="gnb_dropMenu_item"><span class="depth">기타</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li class="classify">
+                    <a href="/investment/disclosure" class="gnb_dropMenu_item"><strong><span>공시정보</span></strong></a>
+                  </li>
+                  <li class="classify">
+                    <a href="/investment/stock" class="gnb_dropMenu_item"><strong><span>주가정보</span></strong></a>
+                  </li>
+                  <li class="classify">
+                    <a href="/investment/finances" class="gnb_dropMenu_item"><strong><span>재무제표</span></strong></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li class="depth_blank">
+                    <a href="/investment/irEvents" class="gnb_dropMenu_item"><strong><span>IR일정</span></strong></a>
+                  </li>
+                  <li>
+                    <a href="/investment/irEvents" class="gnb_dropMenu_item"><span class="depth">IR행사</span></a>
+                  </li>
+                  <li>
+                    <a href="/investment/irMeetings" class="gnb_dropMenu_item"><span class="depth">IR MEETING</span></a>
+                  </li>
+                  <li>
+                    <a href="/investment/shareholderMeetings" class="gnb_dropMenu_item"><span
+                        class="depth">주주총회</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li class="depth_blank">
+                    <a href="/investment/earningsRelease"
+                      class="gnb_dropMenu_item"><strong><span>IR자료실</span></strong></a>
+                  </li>
+                  <li>
+                    <a href="/investment/earningsRelease" class="gnb_dropMenu_item"><span class="depth">실적발표</span></a>
+                  </li>
+                  <li>
+                    <a href="/investment/auditReport" class="gnb_dropMenu_item"><span class="depth">감사보고서</span></a>
+                  </li>
+                  <li>
+                    <a href="/investment/businessReport" class="gnb_dropMenu_item"><span class="depth">사업보고서</span></a>
+                  </li>
+                  <li>
+                    <a href="/investment/annualReport" class="gnb_dropMenu_item"><span class="depth">연차보고서</span></a>
+                  </li>
+                  <li>
+                    <a href="/investment/sustainabilityReport" class="gnb_dropMenu_item"><span
+                        class="depth">지속가능경영보고서</span></a>
+                  </li>
+
+                  <li>
+                    <a href="/investment/faq" class="gnb_dropMenu_item"><span class="depth">FAQ</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="gnb_dropMenu">
+                  <li class="classify">
+                    <a href="/investment/settlementNotice"
+                      class="gnb_dropMenu_item"><strong><span>결산공고</span></strong></a>
+                  </li>
+                  <li class="classify">
+                    <a href="/investment/announcement" class="gnb_dropMenu_item"><strong><span>공고</span></strong></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="gnb_menu_list" role="menuitem" aria-haspopup="true">
+            <a href="/story/stories" class="gnb_menu_item">스토리</a>
+          </li>
+
+          <li class="gnb_menu_list" role="menuitem" aria-haspopup="false">
+            <a href="https://recruit.navercorp.com" class="gnb_menu_item recruit" target="_blank">채용</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- //nav -->
+
+      <div class="header_util">
+        <div class="header_lang">
+          <!-- 사용자정의 속성attribute aria- data- -->
+          <a href="/" aria-selected="true">KOR</a>
+          <a href="/en" aria-selected="false">ENG</a>
+        </div>
+        <!-- .sitemap_box>button.btn_sitemap>span.blind+span.btn_line*3 -->
+        <div class="sitemap_box">
+          <button type="button" class="btn_sitemap">
+            <span class="blind">사이트 열기/닫기</span>
+            <span class="btn_line"></span>
+            <span class="btn_line"></span>
+            <span class="btn_line"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- //header -->
+  <!-- 본문 .container -->
+  <div class="container">
+    <!-- .swiper.mySwiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div></div>
+          <div><img src="img/main/img_main_slide7.jpg" /></div>
+        </div>
+        <div class="swiper-slide">
+          <div></div>
+          <div><img src="img/main/img_main_slide9.jpg" /></div>
+        </div>
+        <div class="swiper-slide">
+          <div></div>
+          <div><img src="img/main/img_main_slide10.jpg" /></div>
+        </div>
+      </div>
+      <!-- //.swiper-wrapper -->
+      <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    </div>
+    <!-- //슬라이드  .swiper.mySwiper-->
+    <div class="main_content">
+      <ul class="content_summary">
+        <li class="summary_container news">
+          <h3 class="summary_title">NEWS</h3>
+            <text_wrap>
+            <p class="title_text"><strong><desc_text>
+              <strong class="news_title"><strong class="news_title">네이버클라우드, 인텔과 동남아 클라우드 시장 진출 위한 협력 강화</strong>
+
+              </strong>
+            </desc_text>
+            <a href="" class="summary_link"></a></strong></p>
+            <p class=""></p>
+          </text_wrap></h3>
+          <div class=""></div>
+        </li>
+        <li class="summary_container CAREEAR">
+          <h3 class="summary_title">careear</h3>
+
+          <div class="text_wrap">
+            <p class="title text"><p class="career_text">수 많은 사용자의 목소리에서<br>내 일의 자부심과 무게를 느낍니다.</p>
+          </p>
+          </div>
+          네이버네서 일한다는 것
+        </li>
+        <li class="summary_container stock1">
+          <h3 class="summary_title">stock</h3>
+          <div class="text_wrap">
+
+         
+         <p class="price">161,500<span class="unit">원</span></p>
+         <span class="figure type2">3,000원</span>
+           <p class="date">KRX 2022.10.12</p>
+          </div>
+        </li>
+        <li class="summary_container stock2">
+          <h3 class="summary_title">결산공고</h3>
+          <div class="text_wrap">
+          <p class="title_text"><strong>>네이버의 재무상태표를 확인<br class="break"> 할 수 있습니다.</strong></p>
+        </div>
+          <a href="" class="summary_link">결산공고 보러가기</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- //본문  //.container-->
+
+
+  <footer>
+
+  </footer>
+
+
+  <!-- swiper 플러그인 연결 -->
+  <script src="src/js/swiper8.4.3-bundle.min.js"></script>
+  <!-- swiper적용 -->
+  <script>
+    var swiper1 = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    }); 
+   
+  </script>
+</body>
+
+</html>

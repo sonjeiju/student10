@@ -374,31 +374,6 @@ nav .gnb_menu_list:nth-of-type(5) .gnb_dropMenu_wrap{
   top:11px; width: calc(100% - 8px);}
 .sitemap_box .btn_sitemap span:nth-of-type(4){
   top:20px; width:100%;}
-
-  /* *.main_content */
-   .main_content{
-    padding: 120px  150px;}
-   .main_content ul.content_summary{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: stretch;
-   }
-   .content_summary .summary_container{
-    flex-basis:25% ;
-    flex-grow: 0;
-    flex-shrink: 1;
-    border: 1px solid #f00;
-
-   }
-   .content_summary .news{}
-   .content_summary .career{}
-   .content_summary .stock1{}
-   .content_summary .stock2{}
-   /* .main_content .content_service{} */
-   /* .main_content .ontent_support{} */
-   
-
   /* 플러그인 */
   /* bxslider */
   .bx-wrapper .bx-controls-direction a{
