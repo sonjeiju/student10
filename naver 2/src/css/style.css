@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+*{margin: 0; padding:0; box-sizing: border-box;}
+ul,ol,li{list-style: none;}
+
+/* 슬라이더 */
+.box-wrap{
+  /* width:800px; */
+  width:100%;
+  margin: 0 auto;
+}
+.visual{
+  width:100%;
+  border:2px solid #f00;
+ 
+}
+.visual li{
+  width:100%;
+}
+.visual li img{
+  width:100%;
+  height: auto;
+}
