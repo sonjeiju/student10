@@ -539,77 +539,140 @@ nav .gnb_menu_list:nth-of-type(5) .gnb_dropMenu_wrap {
 .content_summary .stock2{
   font-size:18px;
 }
-/* .main_content .content_service{}
-.main_content .content_support{} */
-.main_content .content_service{
-  margin: 150px;
-}
-.serice_list_container{
-}
-.serice_list_container .service_thumbnail_box{
-  width: 33.33%;
-  box-sizing: border-box;
- overflow:hidden ;                    
+
+
+/* .content_service */
+ .main_content .content_service{
+  margin-top:150px;
  }
-  li.service_thumbnail_box a{
-    position: relative;
-    color: #fff;
-}
+ .service_list_container{
+  display: flex;
+  /* 플렉스 아이템의 줄바꿈 */
+  flex-wrap: wrap;
+ }
+ /* 단(column)의 크기는 플렉스아이템 */
+ li.service_thumbnail_box{
+  /* flex-basis: 33.33%; */
+  /* flex:0 1 33.33%; */
+  /* 플렉스 아이템의 후손의 크기가 플렉스 아이템보다 클경우를 생각해서   
+  flex-direction:row경우 width 지정
+  flex-direction:column경우 height 지정
+  */
+  width:33.33%; 
+  box-sizing: border-box;
+  overflow: hidden;
+ }
+ /* li.service_thumbnail_box a.thumbnail_dimmed{ */
+ li.service_thumbnail_box a{
+   position: relative; /*li.service_thumbnail_box .description*/
+   color:#fff;
+ }
 
-/* 가변이미지크기지정 */
+ li.service_thumbnail_box  a:after{
+   content:'';
+   display: block;
+   position: absolute; 
+   /*기준요소li.service_thumbnail_box  a*/
+   left:0; top:0;
+   width:100%; height: 100%;
+   background-color: rgba(8, 21, 88,0.5);
+   opacity:0;
+   transition: opacity 0.2s;
+   z-index: 10;
+ }
+ li.service_thumbnail_box:hover a:after{
+  opacity:1;
+ }
 
-li.service_thumbnail_box .thumbnail{
-  /* li.service_thumbnail_box 요소에서 마우스 아웃 상태일때 */
-  width: 100%;
-  transform: scale(1);
+
+
+/*가변이미지크기지정*/
+
+ li.service_thumbnail_box .thumbnail{
+  /* .service_thumbnail_box 요소에서 
+  마우스 아웃 상태의 일때 
+  .thumbnail
+  */
+  width:100%;
+  transform:scale(1);
   transition: all 0.5s;
-}
-li.service_thumbnail_box .thumbnail
+ }
 
-li.service_thumbnail_box .thumbnail img{
-  
+ li.service_thumbnail_box:hover .thumbnail{
+  /* .service_thumbnail_box 요소에서 
+  마우스 hover 상태의 일때 
+  .thumbnail
+  */
+  transform:scale(1.2);
+ }
+
+
+ li.service_thumbnail_box .thumbnail img{ 
+  /* max-width: 100%; */
+  /* 100%;원본보다 커지지 말아라 */
+  width: 100%;  
+  /*이미지를 감싸고 있는 요소의 크기를 따라라*/
   height: auto;
-  /*원본보다 커지지 말아라 */
+  /*이미지 너비가 변경되는것에 맞게 높이 자동
+   기존의 가로:세로의 비율을 유지
+  */
 }
 
-li.service_thumbnail_box .description{
-  position: absolute;
-  width: 100%;
-  /* 너비 지정하지 않을경우 너비-자식,후손크기 높이-자식,후손크기
-     너비를 ㅈ정 기준요소 */
-  left: 0;  bottom: -300px;
-  transition: bottom 0.2s;
+
+
+ li.service_thumbnail_box .description{
+   position: absolute;
+   z-index:20;
+   /* 일반흐름제외  */
+   width:100%;  
+   /* 너비 지정하지 않을경우 너비-자식,후손 크기 높이-자식,후손크기 
+       너비를 지정 기준요소의 너비 -기분요소의 너비에서 높이-자식,후손크기
+   */
+   left:0; bottom:-300px;
+   transition: bottom 0.5s;
   padding:50px 30px 30px;
+  /* 배경이미지 아이콘이 별도로 작업했다면  */
+  /* background:no-repeat url(../img/main/play_circle_FILL0_wght600_GRAD0_opsz48.png) 30px 0px; */
   
-  background-size: no_repeat url(../img/sprite.png)30px 0px;
-}
-li.service_thumbnail_box :hover{
-  color: #fff;
+  /* 배경이미지 크기 지정 */
+  /* background-size:30px 30px; */
+
+  /* sprite 작업되었다면 :after에 주세요 */
+  /* background:no-repeat url(../img/sprite.png) 30px 0px; */
+
+ }
+
+
+ li.service_thumbnail_box:hover .description{
+   bottom:0;
 }
 
-li.service_thumbnail_box  .a:after {
-content:'';
-display: block;
-position: absolute;
-z-index: ;
-left: 0px; top:0;
-width: 100%; height:  100%;
-background-color: rgba(8,21,88,0.5);
-opacity: 0;
-transition: op
-}
- li.service_thumbnail_box  .description .title_text
- {content: ;
-  width: 23px; height: 23px;
-  background-color: #f00;
-  background:no-repeat 
-  font-size: 28px;
-  /* 한 줄 말줄임표 */
+ li.service_thumbnail_box .description:after{
+  content:'';
+  display: block;
+  position: absolute; 
+  /*기준요소는? li.service_thumbnail_box .description*/
+  left:30px; top:0;
+  width: 23px; height: 23px; /*스프라이트 내 해당아이콘 크기*/
+  background:no-repeat url(../img/sprite.png) ;
+  background-position: -199px -129px;
+  /*스프라이트 내 해당아이콘 위치*/
+ }
+
+ li.service_thumbnail_box  .description .title_text{
+   font-size:28px;
+   margin-bottom:10px;
+ }
+ li.service_thumbnail_box  .description .desc_text{
+  font-size:18px;
+  /*한줄 말줄임표*/
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  
- }
+}
+
+
+ /*.main_content .content_support{} */
 
 /************ 
 *플러그인
