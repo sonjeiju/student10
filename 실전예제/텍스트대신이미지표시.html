@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>텍스트 대신 이미지 표시</title>
+</head>
+<body>
+  <h1> 텍스트 대신 이미지 표시</h1>
+  <hr>
+  <h2>요소내 텍스트를 요소로 감싸서 숨기기</h2>
+   <p class="test hidden-text">text</p>
+  <hr>
+  <h2>숨길 텍스트를 요소로 감싸서 숨기기</h2>
+  <!-- 네이버 corp -->
+  <p class="test">
+    <span class="visually-hidden">텍스트</span>
+  </p>
+
+   
+   <style>
+      /* 텍스를 요소로 감싸고 있을때 */
+      .visuaiiy-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* 배경이미지표시할 요소할 숨겨야할 텍스트가 동일 요소  */
+.hide-text{
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.test{
+  /* 배경으로 사용할 이미지 크기에 맞게 크기지정 */
+width: 270px;
+/* 배경이미지 지정 */
+height: 70px;
+background: no-repeat 0px 0px url(../logo.jpg);
+/* 위치확인용 */
+
+box-sizing: border-box;
+border: 1px solid #000;
+}
+    </style>
+  
+</body>
+</html>
